@@ -1,0 +1,8 @@
+def is_triangle_possible(s1,s2,s3):
+    return (s1 + s2 > s3) and (s2 + s3 > s1) and (s1 + s3 > s2)
+    
+s1 = int(input("Input side 1: "))
+s2 = int(input("Input side 2: "))
+s3 = int(input("Input side 3: "))
+
+print(is_triangle_possible(s1,s2,s3))
